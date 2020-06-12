@@ -10,16 +10,16 @@ body {
 
 h2 {
   text-align: center;
-  color:  #333;
+  color:  black;
   font-size: 2em;
 }
 
 /*The container */
 .container {
   background: rgb(178,147,130);
-  background: -moz-linear-gradient(90deg, rgba(178,147,130,1) 0%, rgba(194,197,75,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(178,147,130,1) 0%, rgba(194,197,75,1) 100%);
-  background: linear-gradient(90deg, rgba(178,147,130,1) 0%, rgba(194,197,75,1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(178,147,130,0.5) 0%, rgba(194,197,75,0.5) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(178,147,130,0.5) 0%, rgba(194,197,75,0.5) 100%);
+  background: linear-gradient(90deg, rgba(178,147,130,0.5) 0%, rgba(194,197,75,0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b29382",endColorstr="#c2c54b",GradientType=1);
   background-size: 300% 300%;
   animation: gradientBG 10s ease infinite;
@@ -92,7 +92,7 @@ body {
 }
 
 .container {
-  color: #333;
+  color: black;
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
