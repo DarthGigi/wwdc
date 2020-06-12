@@ -1,6 +1,7 @@
 body {
+  background-color: black !important;
   font-family: -apple-system system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
-  background-image: url("https://images.macrumors.com/article-new/2020/06/wwdc2020-cropped-feature.jpg");
+  background-image: url("https://www.apple.com/newsroom/images/live-action/wwdc/standard/apple_wwdc-announcement_ready-set-code_05052020_big.jpg.small_2x.jpg") !important;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -12,6 +13,7 @@ h2 {
   color:  #333;
   font-size: 2em;
 }
+
 /*The container */
 .container {
   background: rgb(178,147,130);
