@@ -1,4 +1,5 @@
 body {
+  pointer-events: none;
   background-color: black !important;
   font-family: -apple-system system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
   background-image: url("https://www.apple.com/newsroom/images/live-action/wwdc/standard/apple_wwdc-announcement_ready-set-code_05052020_big.jpg") !important;
@@ -16,6 +17,7 @@ h2 {
 
 /*The container */
 .container {
+  pointer-events: none;
   background: rgb(228,2,45);
   background: -moz-linear-gradient(90deg, rgba(36, 37, 39,0.7) 0%, rgba(112, 113, 117,0.7) 100%);
   background: -webkit-linear-gradient(90deg, rgba(36, 37, 39,0.7) 0%, rgba(112, 113, 117,0.7) 100%);
@@ -73,6 +75,7 @@ html, body {
 }
 
 body {
+  pointer-events: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -92,6 +95,7 @@ body {
 }
 
 .container {
+  pointer-events: none;
   position: relative;
   z-index: 4;
   color: black;
