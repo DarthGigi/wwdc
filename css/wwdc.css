@@ -140,7 +140,7 @@ body {
     top: 30%;
     right: 5%;
     will-change: transform;
-    animation: move-astronaut 30s infinite linear both alternate;
+    animation: move-astronaut 60s infinite linear both alternate;
 }
 
 .footer {
