@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/DarthGigi/wwdc/main/assets/images/Swift.jpg)<p align=center>
+![Logo](https://raw.githubusercontent.com/DarthGigi/wwdc/gh-pages/assets/images/Swift.jpg)<p align=center>
 <img src="https://img.shields.io/github/license/DarthGigi/wwdc?style=for-the-badge" alt="license">
 <img src="https://img.shields.io/github/languages/count/DarthGigi/wwdc?style=for-the-badge" alt="languages">
 <img src="https://img.shields.io/github/languages/top/DarthGigi/wwdc?style=for-the-badge" alt="top language">
@@ -43,4 +43,4 @@ If you have any feedback, please reach out to us at overlap.corrals0d@icloud.com
 
 ## 📜 License
 
-[MIT](https://github.com/DarthGigi/wwdc/blob/main/LICENSE)
+[MIT](https://github.com/DarthGigi/wwdc/blob/gh-pages/LICENSE)
