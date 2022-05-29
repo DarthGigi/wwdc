@@ -39,7 +39,7 @@ JavaScript, HTML and Tailwind CSS
 
 ## 💬 Feedback
 
-If you have any feedback, please reach out to us at overlap.corrals0d@icloud.com
+If you have any feedback, please reach out to me at overlap.corrals0d@icloud.com
 
 ## 📜 License
 
