@@ -1,59 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" class="element">
+<html lang="en" class="bg-black">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/wwdc.css">
-    <title>WWDC 2020 Countdown Timer</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="WWDC 2020 Countdown">
-    <meta name="keywords" content="Apple, WWDC, WWDC2020, WWDC 2020">
-    <meta name="author" content="Gigi">
-    <meta property="og:title" content="WWDC 2020" />
-    <meta content="The WWDC 2020 Countdown Timer" name="og:description" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/master.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#f05138" />
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="WWDC Timer" />
+    <meta name="application-name" content="WWDC Timer" />
+    <meta name="msapplication-TileColor" content="#f05138" />
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#000" />
+
+    <!-- Primary Meta Tags -->
+    <title>A Yearly WWDC Countdown Timer</title>
+    <meta name="title" content="A Yearly WWDC Countdown Timer" />
+    <meta name="description" content="A simple website to quickly check when the next Apple's Worldwide Developers Conference (WWDC) begins." />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://mrgigi.me/wwdc/" />
-    <meta property="og:image" content="https://i.imgur.com/Zsrd2Bq.jpg" />
+    <meta property="og:url" content="https://wwdc.mrgigi.me/" />
+    <meta property="og:title" content="A Yearly WWDC Countdown Timer" />
+    <meta property="og:description" content="A simple website to quickly check when the next Apple's Worldwide Developers Conference (WWDC) begins." />
+    <meta property="og:image" content="/assets/images/Swift.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wwdc.mrgigi.me/" />
+    <meta property="twitter:title" content="A Yearly WWDC Countdown Timer" />
+    <meta property="twitter:description" content="A simple website to quickly check when the next Apple's Worldwide Developers Conference (WWDC) begins." />
+    <meta property="twitter:image" content="/assets/images/Swift.jpg" />
   </head>
-  <body>
-<div class= container>
-<script type="text/javascript">
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
 
-  let countDown = new Date('June 22, 2020 10:00:00').getTime(),
-      x = setInterval(function() {
+  <body class="bg-black">
+    <div class="h-full w-full">
+      <div class="h-full">
+        <section class="relative flex h-full flex-1 shrink-0 items-center justify-center overflow-hidden py-16 shadow-lg md:py-20 xl:py-48">
+          <!-- video - start -->
+          <video id="wwdcvideo" class="absolute inset-0 h-full w-full object-cover object-center" preload="metadata" disablepictureinpicture autoplay muted playsinline>
+            <source src="/assets/videos/intro.mp4" type="video/mp4" />
+          </video>
+          <!-- video - end -->
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
-
-        document.getElementById('days').innerText = Math.floor(distance / (day)),
-          document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-
-        //do something later when date is reached
-        //if (distance < 0) {
-        //  clearInterval(x);
-        //  'IT'S MY BIRTHDAY!;
-        //}
-
-      }, second)
-</script>
-<ul>
-    <li><span id="days"></span>days</li>
-    <li><span id="hours"></span>Hours</li>
-    <li><span id="minutes"></span>Minutes</li>
-    <li><span id="seconds"></span>Seconds</li>
-  </ul>
-</div>
-<div class="box_astronaut">
-  <img class="object_astronaut" src="images/SVG/astronaut.svg"  width="100px">
-</div>
-<div class="footer">
-  <p>Made by Gigi#0124</p>
-  <p>Special thanks to Matt.#3815 for making it more dynamic and optimizing for mobile</p>
-</div>
-</body>
+          <!-- text start -->
+          <div class="relative m-2 flex flex-col items-center rounded-2xl bg-gray-900 bg-opacity-50 p-16 backdrop-blur">
+            <h1 class="mb-2 text-center text-2xl font-bold text-[#c6e1e6] sm:text-3xl md:mb-4 md:text-4xl">
+              WWDC 2022 <br />
+              &mdash; <br />
+              Swiftly Approaching.
+            </h1>
+            <p class="text-center text-lg text-blue-200 sm:text-xl">Happening in</p>
+            <div id="timecontainer" class="sm:flex hidden flex-row">
+              <div class="flex">
+                <div class="flex flex-col p-4">
+                  <p id="day" class="day flex animate-pulse justify-center text-3xl text-white">1</p>
+                  <p id="daytext" class="daytext animate-pulse text-base font-semibold uppercase text-blue-200">The</p>
+                </div>
+                <div class="flex flex-col p-4">
+                  <p id="hour" class="hour flex animate-pulse justify-center text-3xl text-white">9</p>
+                  <p id="hourtext" class="hourtext animate-pulse text-base font-semibold uppercase text-blue-200">Mac</p>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex flex-col p-4">
+                  <p id="minute" class="minute flex animate-pulse justify-center text-3xl text-white">8</p>
+                  <p id="minutetext" class="minutetext animate-pulse text-base font-semibold uppercase text-blue-200">In</p>
+                </div>
+                <div class="flex flex-col p-4">
+                  <p id="second" class="second flex animate-pulse justify-center text-3xl text-white">4</p>
+                  <p id="secondtext" class="secondtext animate-pulse text-base font-semibold uppercase text-blue-200">Tosh</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex sm:hidden">
+              <div class="flex flex-col p-4">
+                <p id="day" class="day flex animate-pulse justify-center text-3xl text-white">1</p>
+                <p id="daytext" class="daytext animate-pulse text-base font-semibold uppercase text-blue-200">The</p>
+              </div>
+              <div class="flex flex-col p-4">
+                <p id="hour" class="hour flex animate-pulse justify-center text-3xl text-white">9</p>
+                <p id="hourtext" class="hourtext animate-pulse text-base font-semibold uppercase text-blue-200">Mac</p>
+              </div>
+            </div>
+            <div class="flex sm:hidden">
+              <div class="flex flex-col p-4">
+                <p id="minute" class="minute flex animate-pulse justify-center text-3xl text-white">8</p>
+                <p id="minutetext" class="minutetext animate-pulse text-base font-semibold uppercase text-blue-200">In</p>
+              </div>
+              <div class="flex flex-col p-4">
+                <p id="second" class="second flex animate-pulse justify-center text-3xl text-white">4</p>
+                <p id="secondtext" class="secondtext animate-pulse text-base font-semibold uppercase text-blue-200">Tosh</p>
+              </div>
+            </div>
+          <p class="text-center text-xs font-semibold text-blue-200">For more information, visit <a class="hover:text-blue-300" target="_blank" href="https://wwdc.com/">www.apple.com/wwdc</a> and <a class="hover:text-blue-300" target="_blank" href="https://www.apple.com/apple-events/">www.apple.com/apple-events</a></p>
+          <!-- text end -->
+        </section>
+      </div>
+    </div>
+    <script src="/assets/scripts/javascript.js"></script>
+  </body>
 </html>
