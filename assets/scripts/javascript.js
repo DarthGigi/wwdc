@@ -1,8 +1,8 @@
 // Yearly Apple WWDC Countdown Timer
 
-// June 6th 2022 @ 10:00am PST
-const wwdcdate = new Date(Date.UTC(2022, 5, 6, 10, 0, 0))
-// const wwdcdate = new Date().getTime()
+// June 6th 2022 @ 5:00pm UTC
+const wwdcdate = new Date(Date.UTC(2022, 5, 6, 17, 0, 0))
+console.log(wwdcdate.toUTCString())
 
 const day = document.querySelectorAll('.day')
 const daytext = document.querySelectorAll('.daytext')
