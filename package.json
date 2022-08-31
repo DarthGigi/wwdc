@@ -1,0 +1,27 @@
+{
+  "name": "aaect",
+  "version": "1.0.0",
+  "description": "An automatic apple event countdown timer.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/styles/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarthGigi/wwdc.git"
+  },
+  "keywords": [
+    "Apple",
+    "Event",
+    "Timer"
+  ],
+  "author": "Gigi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarthGigi/wwdc/issues"
+  },
+  "homepage": "https://github.com/DarthGigi/wwdc#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
