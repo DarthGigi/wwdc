@@ -8,12 +8,12 @@
 Scrape the Apple Events https://www.apple.com/apple-events/ page for the calendar link to get the date of the next event
 The calendar link is in the format of https://events.apple.com/services/public/params/ical?summary=Apple+Event&location=https://www.apple.com/apple-events/event-stream/&storeUrl=https://www.apple.com/apple-events/event-stream/&timeZone=America/Los_Angeles&startDate=07/09/202210:00:00&endDate=07/09/202212:00:00&descriptionHeader=Please+join+us+for+a+special+Apple+Event+broadcasting+from+Apple+Park.+Watch+it+online+at+apple.com
 Find data-analytics-title="add to your calendar" and get the href attribute
-CORS issue, use https://cors-anywhere.herokuapp.com/ to bypass CORS
+CORS issue, use https://proxy.cors.sh/ to bypass CORS
 */
 
 async function getAppleEventsCalLink() {
   const response = await fetch(
-    "https://cors-anywhere.herokuapp.com/https://www.apple.com/apple-events/"
+    "https://proxy.cors.sh/https://www.apple.com/apple-events/"
   );
   const data = await response.text();
   const parser = new DOMParser();
@@ -121,7 +121,7 @@ const x = setInterval(function () {
 
 async function getBackgroundImage() {
   const response = await fetch(
-    "https://cors-anywhere.herokuapp.com/https://www.apple.com/v/apple-events/home/x/built/styles/overview.built.css"
+    "https://proxy.cors.sh/https://www.apple.com/v/apple-events/home/x/built/styles/overview.built.css"
   );
   const data = await response.text();
   console.log(data);
