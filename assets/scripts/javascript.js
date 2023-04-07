@@ -12,15 +12,11 @@ CORS issue, use https://proxy.cors.sh/ to bypass CORS
 */
 
 async function getAppleEventsCalLink() {
-  const response = await fetch(
-    "https://proxy.cors.sh/https://www.apple.com/apple-events/"
-  );
+  const response = await fetch("https://proxy.cors.sh/https://www.apple.com/apple-events/");
   const data = await response.text();
   const parser = new DOMParser();
   const html = parser.parseFromString(data, "text/html");
-  const calendarLink = html.querySelector(
-    'a[data-analytics-title="add to your calendar"]'
-  ).href;
+  const calendarLink = html.querySelector('a[data-analytics-title="add to your calendar"]').href;
   //   Save the calendar link to local storage so we don't have to scrape the page every time for a week
   localStorage.setItem("calendarLink", calendarLink);
   localStorage.setItem("calendarLinkDate", new Date());
@@ -45,9 +41,7 @@ function getAppleEventDate() {
 
   // Convert the date from America/Los_Angeles timezone to GMT timezone
   const appleEventDateGMT = new Date(
-    `${appleEventYear}-${appleEventMonth}-${appleEventDay}T${appleEventDate.slice(
-      10
-    )}-07:00` // America/Los_Angeles timezone
+    `${appleEventYear}-${appleEventMonth}-${appleEventDay}T${appleEventDate.slice(10)}-07:00` // America/Los_Angeles timezone
   ).toUTCString();
 
   return appleEventDateGMT;
@@ -73,9 +67,7 @@ const x = setInterval(function () {
 
   // Time calculations for days, hours, minutes and seconds
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
@@ -108,8 +100,7 @@ const x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    timecontainer.innerHTML =
-      '<a href="https://www.apple.com/apple-events/" class="underline underline-offset-2 text-3xl text-gray-200">LIVE NOW AT APPLE.COM</a>';
+    timecontainer.innerHTML = '<a href="https://www.apple.com/apple-events/" class="underline underline-offset-2 text-3xl text-gray-200">LIVE NOW AT APPLE.COM</a>';
   }
 }, 150);
 
@@ -120,15 +111,11 @@ const x = setInterval(function () {
 // Get the hero-image background image url from https://www.apple.com/v/apple-events/home/x/built/styles/overview.built.css
 
 async function getBackgroundImage() {
-  const response = await fetch(
-    "https://proxy.cors.sh/https://www.apple.com/v/apple-events/home/x/built/styles/overview.built.css"
-  );
+  const response = await fetch("https://proxy.cors.sh/https://www.apple.com/v/apple-events/home/x/built/styles/overview.built.css");
   const data = await response.text();
   console.log(data);
   //   Find the background image url ".hero-image{background-image:url"
-  const backgroundImage =
-    "https://apple.com" +
-    data.split(".hero-image{background-image:url(")[1].split(")")[0];
+  const backgroundImage = "https://apple.com" + data.split(".hero-image{background-image:url(")[1].split(")")[0];
   console.log(backgroundImage);
   //   Save the background image url to local storage so we don't have to scrape the page every time for a week
   localStorage.setItem("backgroundImage", backgroundImage);
@@ -146,6 +133,10 @@ const currentDate = new Date();
 if (currentDate - new Date(backgroundImageDate) > 604800000) {
   getBackgroundImage();
 }
-document.getElementById(
-  "backgroundImage"
-).style.backgroundImage = `url(${backgroundImage})`;
+
+if (backgroundImage !== null) {
+  setTimeout(function () {
+    document.getElementById("backgroundImage").style.backgroundImage = `url(${backgroundImage})`;
+    document.getElementById("backgroundImage").innerHTML = "";
+  }, 5000);
+}

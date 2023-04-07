@@ -1,3 +1,10 @@
+# Archived Notice
+
+This repository is archived and no longer maintained.
+If you want to use it, feel free to fork it and make it your own.
+
+---
+
 ![Logo](https://raw.githubusercontent.com/DarthGigi/wwdc/gh-pages/assets/images/Swift.jpg)<p align=center>
 <img src="https://img.shields.io/github/license/DarthGigi/wwdc?style=for-the-badge" alt="license">
 <img src="https://img.shields.io/github/languages/count/DarthGigi/wwdc?style=for-the-badge" alt="languages">
@@ -8,13 +15,12 @@
 
 ## 📑 Table of Contents
 
--   [👋 Intro](https://github.com/DarthGigi/wwdc/#-a-personal-portfolio-website)
--   [⚙️ Made With](https://github.com/DarthGigi/wwdc/#-hand-crafted-with)
--   [🖇 Links](https://github.com/DarthGigi/wwdc/#-links)
-    -   [🔗 Tools Used](https://github.com/DarthGigi/wwdc/#%EF%B8%8F-tools-used)
-    -   [🔗 Contact](https://github.com/DarthGigi/wwdc/#-contact)
--   [🗣 Feedback](https://github.com/DarthGigi/wwdc/#-feedback)
--   [📄 License](https://github.com/DarthGigi/wwdc/#-license)
+- [👋 Intro](https://github.com/DarthGigi/wwdc/#-a-personal-portfolio-website)
+- [⚙️ Made With](https://github.com/DarthGigi/wwdc/#-hand-crafted-with)
+- [🖇 Links](https://github.com/DarthGigi/wwdc/#-links)
+  - [🔗 Tools Used](https://github.com/DarthGigi/wwdc/#%EF%B8%8F-tools-used)
+  - [🔗 Contact](https://github.com/DarthGigi/wwdc/#-contact)
+- [📄 License](https://github.com/DarthGigi/wwdc/#-license)
 
 # 👨🏻‍💻 A personal portfolio website
 
@@ -27,19 +33,15 @@ JavaScript, HTML and Tailwind CSS
 
 ## 🔗 Links
 
--   ### ⚒️ Tools Used
+- ### ⚒️ Tools Used
 
-    -   [![Tailwind CSS](https://img.shields.io/static/v1?label=&message=Tailwind+CSS&color=111827&style=for-the-badge&logo=Tailwind+CSS)](https://tailwindcss.com/)
-    -   [![Prettier](https://img.shields.io/static/v1?label=&message=Prettier&color=111827&style=for-the-badge&logo=Prettier)](https://prettier.io/)
+  - [![Tailwind CSS](https://img.shields.io/static/v1?label=&message=Tailwind+CSS&color=111827&style=for-the-badge&logo=Tailwind+CSS)](https://tailwindcss.com/)
+  - [![Prettier](https://img.shields.io/static/v1?label=&message=Prettier&color=111827&style=for-the-badge&logo=Prettier)](https://prettier.io/)
 
--   ### 🤝 Contact
-    -   [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
-    -   [![Twitter](https://img.shields.io/static/v1?label=&message=Twitter&color=111827&style=for-the-badge&logo=Twitter)](https://twitter.com/iDarthGigi)
-    -   [![E-Mail](https://img.shields.io/static/v1?label=&message=E-Mail&color=111827&style=for-the-badge&logo=gmail)](mailto:overlap.corrals0d@icloud.com)
-
-## 💬 Feedback
-
-If you have any feedback, please reach out to me at overlap.corrals0d@icloud.com
+- ### 🤝 Contact
+  - [![Portfolio](https://img.shields.io/static/v1?label=&message=My+Portfolio&color=%23111827&style=for-the-badge&logo=ko-fi)](https://mrgigi.me/)
+  - [![Twitter](https://img.shields.io/static/v1?label=&message=Twitter&color=111827&style=for-the-badge&logo=Twitter)](https://twitter.com/iDarthGigi)
+  - [![E-Mail](https://img.shields.io/static/v1?label=&message=E-Mail&color=111827&style=for-the-badge&logo=gmail)](mailto:overlap.corrals0d@icloud.com)
 
 ## 📜 License
 

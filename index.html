@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="./assets/css/master.css" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#f05138" />
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#f05138" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
     <meta name="apple-mobile-web-app-title" content="Apple Event Timer" />
     <meta name="application-name" content="Apple Event Timer" />
     <meta name="msapplication-TileColor" content="#f05138" />
-    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml" />
+    <meta name="msapplication-config" content="./assets/images/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#000" />
 
     <!-- Primary Meta Tags -->
@@ -26,17 +26,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wwdc.mrgigi.me/" />
+    <meta property="og:url" content="./" />
     <meta property="og:title" content="An Automatic Apple Event Countdown Timer" />
     <meta property="og:description" content="A simple website to quickly check when the next Apple Event begins." />
-    <meta property="og:image" content="/assets/images/Swift.jpg" />
+    <meta property="og:image" content="./assets/images/Swift.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://wwdc.mrgigi.me/" />
+    <meta property="twitter:url" content="./" />
     <meta property="twitter:title" content="An Automatic Apple Event Countdown Timer" />
     <meta property="twitter:description" content="A simple website to quickly check when the next Apple Event begins." />
-    <meta property="twitter:image" content="/assets/images/Swift.jpg" />
+    <meta property="twitter:image" content="./assets/images/Swift.jpg" />
   </head>
 
   <body class="bg-black h-full">
@@ -44,6 +44,7 @@
       <div class="h-full">
         <section class="relative flex h-full flex-1 shrink-0 items-center justify-center overflow-hidden py-16 shadow-lg md:py-20 xl:py-48">
           <div id="backgroundImage" class="absolute bg-cover h-full bg-no-repeat w-full">
+            <video autoplay muted playsinline class="w-full h-full object-cover object-center" src="./assets/videos/intro.mp4"></video>
           </div>
           <!-- text start -->
           <div class="relative m-2 flex flex-col items-center rounded-2xl bg-gray-900 bg-opacity-50 p-16 backdrop-blur">
@@ -95,11 +96,12 @@
                 <p id="secondtext" class="secondtext text-base font-semibold uppercase text-blue-200">Tosh</p>
               </div>
             </div>
-          <p class="text-center text-xs font-semibold text-blue-200">For more information, visit <a class="hover:text-blue-300 hidden" target="_blank" href="https://Apple Event.com/">www.apple.com/Apple Event</a> <span class="hidden">and</span> <a class="hover:text-blue-300 underline underline-offset-1" target="_blank" href="https://www.apple.com/apple-events/">www.apple.com/apple-events</a></p>
-          <!-- text end -->
+            <p class="text-center text-xs font-semibold text-blue-200">For more information, visit <a class="hover:text-blue-300 hidden" target="_blank" href="https://apple.com/events">www.apple.com/Apple Event</a> <span class="hidden">and</span> <a class="hover:text-blue-300 underline underline-offset-1" target="_blank" href="https://www.apple.com/apple-events/">www.apple.com/apple-events</a></p>
+            <!-- text end -->
+          </div>
         </section>
       </div>
     </div>
-    <script src="/assets/scripts/javascript.js" defer></script>
+    <script src="./assets/scripts/javascript.js" defer></script>
   </body>
 </html>
